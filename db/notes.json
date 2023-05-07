@@ -3,5 +3,10 @@
         "title": "First note!",
         "text": "Testing note functionality",
         "note_id": "dc10"
+    },
+    {
+        "title": "2nd note",
+        "text": "note two",
+        "note_id": "74d2"
     }
 ]
