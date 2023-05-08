@@ -28,7 +28,7 @@ notes.post('/', (req, res) => {
 });
 
 // DELETE :id
-notes.delete(':id', (req, res) => {
+notes.delete('/:id', (req, res) => {
   const id = req.params.id;
   // Call the database or storage system to delete the note with the specified ID
   deleteNote(id, './db/notes.json', function(err, result) {
