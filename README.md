@@ -1,4 +1,4 @@
-# Express.js Note Taken
+# Express.js Note Taker
 
 ## User Story
 
@@ -28,13 +28,21 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## Mockup
+Application on open:
+[Application on open](./public/assets/images/mockup-1.png). 
 
+Adding a note:
+[Adding a note](./public/assets/images/mockup-2.png). 
 
 ## Installation & Links
-
+Deployed Application: [express-note-taker-i.herokuapp.com/](https://express-note-taker-i.herokuapp.com/)
+GitHub Repository: [github.com/isabelkvaughan/express-note-taker](https://github.com/isabelkvaughan/express-note-taker)
 
 ## Usage
-
+1) Open the application at [express-note-taker-i.herokuapp.com/](https://express-note-taker-i.herokuapp.com/).
+2) Click 'Get Started' to see existing notes, and add new notes. 
+3) Type in the note inputs, and use the save icon top right to save your note. 
+4) Use the trash icon to delete notes as required. 
 
 ## Contact
 
