@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend, deleteNote } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the notes
@@ -27,8 +27,8 @@ notes.post('/', (req, res) => {
   }
 });
 
-// DELETE /api/notes/:id
-notes.delete('/api/notes/:id', (req, res) => {
+// DELETE :id
+notes.delete(':id', (req, res) => {
   const id = req.params.id;
   // Call the database or storage system to delete the note with the specified ID
   db.deleteNote(id, function(err, result) {
