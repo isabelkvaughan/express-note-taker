@@ -31,7 +31,7 @@ notes.post('/', (req, res) => {
 notes.delete(':id', (req, res) => {
   const id = req.params.id;
   // Call the database or storage system to delete the note with the specified ID
-  db.deleteNote(id, function(err, result) {
+  deleteNote(id, './db/notes.json', function(err, result) {
     if (err) {
       // If there's an error, send a 500 Internal Server Error response
       res.status(500).json({error: 'Internal Server Error'});
